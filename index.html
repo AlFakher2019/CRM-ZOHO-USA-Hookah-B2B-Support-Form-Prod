@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hookah&#x20;B2B&#x20;-&#x20;Support&#x20;Form</title>
     <link href="css/form.css" rel="stylesheet" type="text/css" />
     <script src="js/validation.js"></script>
@@ -56,10 +57,11 @@
           <div class="zf-subContWrap zf-topAlign">
             <ul>
               <!---------Name Starts Here---------->
-              <li class="zf-tempFrmWrapper zf-name zf-namelarge">
+              <li class="zf-tempFrmWrapper ">
                 <div class="zf-tempContDiv zf-twoType">
-                  <div class="zf-nameWrapper">
-                    <span>
+                  <div class="zf-nameWrapper ">
+                    <div class="main-f">
+                    <div class="col1">
                       <label class="zf-labelName">
                         First Name
                         <em class="zf-important">*</em>
@@ -71,9 +73,9 @@
                         fieldType="7"
                         placeholder=""
                       />
-                    </span>
+                    </div>
 
-                    <span>
+                    <div class="col2">
                       <label class="zf-labelName">
                         Last Name
                         <em class="zf-important">*</em>
@@ -85,8 +87,8 @@
                         fieldType="7"
                         placeholder=""
                       />
-                    </span>
-
+                    </div>
+                  </div>
                     <div class="zf-clearBoth"></div>
                   </div>
                   <p
@@ -101,7 +103,7 @@
               </li>
               <!---------Name Ends Here---------->
               <!---------Single Line Starts Here---------->
-              <li class="zf-tempFrmWrapper zf-large">
+              <li class="zf-tempFrmWrapper zf-large" style="display: none">
                 <label class="zf-labelName"> Company </label>
                 <div class="zf-tempContDiv">
                   <span>
@@ -125,34 +127,62 @@
                 <div class="zf-clearBoth"></div>
               </li>
               <!---------Single Line Ends Here---------->
-              <!---------Email Starts Here---------->
-              <li class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName">
-                  Email
-                  <em class="zf-important">*</em>
-                </label>
-                <div class="zf-tempContDiv">
-                  <span>
-                    <input
-                      fieldType="9"
-                      type="text"
-                      maxlength="255"
-                      name="Email"
-                      checktype="c5"
-                      value=""
-                      placeholder=""
-                  /></span>
-                  <p
-                    id="Email_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Invalid value
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
-              </li>
-              <!---------Email Ends Here---------->
+              <div class="main-f">
+                <!---------Single Line Starts Here---------->
+                <li class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName"> Order Number </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input
+                        type="text"
+                        name="SingleLine1"
+                        checktype="c1"
+                        value=""
+                        maxlength="255"
+                        fieldType="1"
+                        placeholder=""
+                    /></span>
+                    <p
+                      id="SingleLine1_error"
+                      class="zf-errorMessage"
+                      style="display: none"
+                    >
+                      Invalid value
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </li>
+                <!---------Single Line Ends Here---------->
+                <!---------Email Starts Here---------->
+                <li class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName">
+                    Email
+                    <em class="zf-important">*</em>
+                  </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input
+                        fieldType="9"
+                        type="text"
+                        maxlength="255"
+                        name="Email"
+                        checktype="c5"
+                        value=""
+                        placeholder=""
+                    /></span>
+                    <p
+                      id="Email_error"
+                      class="zf-errorMessage"
+                      style="display: none"
+                    >
+                      Invalid value
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </li>
+                <!---------Email Ends Here---------->
+              </div>
+              <div class="main-f">
               <!---------Phone Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large">
                 <label class="zf-labelName"> Phone </label>
@@ -188,40 +218,17 @@
                 <div class="zf-clearBoth"></div>
               </li>
               <!---------Phone Ends Here---------->
-              <!---------Single Line Starts Here---------->
-              <li class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName"> Order ID </label>
-                <div class="zf-tempContDiv">
-                  <span>
-                    <input
-                      type="text"
-                      name="SingleLine1"
-                      checktype="c1"
-                      value=""
-                      maxlength="255"
-                      fieldType="1"
-                      placeholder=""
-                  /></span>
-                  <p
-                    id="SingleLine1_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Invalid value
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
-              </li>
-              <!---------Single Line Ends Here---------->
               <!---------Dropdown Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large">
                 <label class="zf-labelName">
-                  Classifications
+                  Reason for contacting us
                   <em class="zf-important">*</em>
                 </label>
                 <div class="zf-tempContDiv">
                   <select class="zf-form-sBox" name="Dropdown" checktype="c1">
-                    <option selected="true" value="-Select-" disabled>Select</option>
+                    <option selected="true" value="-Select-" disabled>
+                      Select
+                    </option>
                     <optgroup label="Account Issue">
                       <option value="Update&#x20;Account&#x20;Information">
                         Update&#x20;Account&#x20;Information
@@ -368,6 +375,7 @@
                 <div class="zf-clearBoth"></div>
               </li>
               <!---------Dropdown Ends Here---------->
+            </div>
               <!---------Single Line Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large">
                 <label class="zf-labelName">
@@ -398,7 +406,7 @@
               <!---------Single Line Ends Here---------->
               <!---------Multiple Line Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName"> Description </label>
+                <label class="zf-labelName"> Message </label>
                 <div class="zf-tempContDiv">
                   <span>
                     <textarea

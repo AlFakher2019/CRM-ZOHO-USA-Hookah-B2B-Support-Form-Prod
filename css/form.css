@@ -302,7 +302,7 @@ select:focus-visible {
 }
 
 .zf-tempHeadContBdr {
-  margin: 15px;
+  margin: 15px 0px;
 }
 
 .zf-tempHeadContBdr .zf-frmTitle {
@@ -330,9 +330,10 @@ select:focus-visible {
 }
 
 .zf-tempFrmWrapper {
-  padding: 10px 15px;
+  padding: 10px 0px;
   margin: 1px 0;
   list-style: none;
+  width: 100%;
 }
 
 .zf-tempFrmWrapper .zf-tempContDiv {
@@ -348,7 +349,7 @@ select:focus-visible {
 
 .zf-form-sBox {
   font-family: "brandon-grotesque", sans-serif;
-  padding: 15px;
+  padding: 18px;
   border: 1px solid #bdbcbb;
   font-size: 13px;
   border-radius: 6px;
@@ -723,7 +724,7 @@ select:focus-visible {
 
 .zf-fmFooter {
   margin: 0;
-  padding: 18px;
+  padding: 18px 0px;
 }
 
 .zf-fmFooter .zf-submitColor {
@@ -1298,7 +1299,18 @@ select {
 .wid {
   width: 50%;
 }
+.main-f{
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+.col1 {
+	width: 50%;
+}
 
+.col2 {
+	width: 50%;
+}
 @media only screen and (max-width: 600px) {
   .one-line {
     flex-direction: column;
@@ -1316,7 +1328,13 @@ select {
   .zf-subContWrap {
     margin: 20px;
   }
+  .zf-fmFooter{
+    padding: 18px 20px;
 
+  }
+  .zf-tempHeadContBdr {
+    margin: 15px 20px;
+}
   .mess {
     margin: 20px;
   }
@@ -1334,6 +1352,17 @@ select {
   body {
     padding: 0px;
   }
+  .main-f{
+    flex-direction: column;
+  }
+  .col1 {
+		width: 100%;
+	}
+
+	.col2 {
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
 #loaderContainer {
