@@ -85,7 +85,7 @@ video {
 body {
   background-attachment: fixed;
   color: #101114;
-  font-family: "Lato", serif;
+  font-family: "Public Sans", sans-serif;
   margin: 0 auto;
 }
 
@@ -810,8 +810,8 @@ select {
   appearance: none;
   background-image: url("https://25636661.fs1.hubspotusercontent-eu1.net/hubfs/25636661/arrow-205.svg");
   background-repeat: no-repeat, repeat;
-  background-position: right 0.7em top 50%, 0 0;
-  background-size: 1.2rem auto, 100%;
+  background-position: right 1em top 50%, 0 0;
+  background-size: 1rem auto, 100%;
 }
 
 .zf-name .zf-tempContDiv .zf-form-sBox {
