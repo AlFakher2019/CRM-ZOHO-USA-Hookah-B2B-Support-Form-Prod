@@ -87,9 +87,6 @@ body {
   color: #101114;
   font-family: "Lato", serif;
   margin: 0 auto;
-  border: 1px solid;
-  border-color: #e5e5e3;
-  padding: 0px 2rem;
 }
 
 input,
@@ -197,10 +194,6 @@ ul {
 } */
 
 .zf-templateWidth {
-  margin: 1% auto;
-}
-
-.zf-templateWidth {
   width: 100%;
 }
 
@@ -302,7 +295,7 @@ select:focus-visible {
 }
 
 .zf-tempHeadContBdr {
-  margin: 15px 0px;
+  margin-bottom: 15px;
 }
 
 .zf-tempHeadContBdr .zf-frmTitle {
@@ -730,7 +723,7 @@ select:focus-visible {
 .zf-fmFooter .zf-submitColor {
   font-family: "Poppins", serif;
   font-size: 16px;
-  padding: 16px 32px;
+  padding: 13px 36px;
   font-weight: 600;
 }
 
